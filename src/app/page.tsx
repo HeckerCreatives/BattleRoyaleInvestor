@@ -7,7 +7,7 @@ import Rof from "@/components/rofinvestors/Rof";
 
 export default function Home() {
   return (
-    <div className=" w-full h-full flex flex-col items-center overflow-x-hidden"
+    <div className=" w-full h-full flex flex-col items-center overflow-x-hidden scroll-smooth"
     style={{ backgroundImage: "url('/assets/BG Pattern Solid.png')" , backgroundSize:'contain', backgroundRepeat:'repeat', backgroundPosition:'bottom'}}
     >
       

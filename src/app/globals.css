@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .header{
@@ -92,9 +99,7 @@ body {
 
 
 .btnshadow{
-  box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+  filter: drop-shadow(5px 5px 10px #000000);
 }
 
 /* Move pagination below Swiper */

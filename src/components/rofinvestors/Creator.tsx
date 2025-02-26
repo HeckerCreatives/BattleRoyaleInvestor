@@ -8,12 +8,12 @@ export default function Creator() {
         <div className=' w-full max-w-[1440px] flex flex-col items-center justify-center mt-4'>
             <img src="/assets/aboutthecreator.png" alt="" width={480} className=' ~w-72/96'/>
 
-            <div className=' relative w-fit hidden lg:flex items-center justify-center mt-20'>
+            <div className=' relative w-fit hidden lg:flex items-center justify-end mt-20'>
                 <img src="/assets/Description TAB.png" alt="" />
-                <img src="/assets/IMAGE - About Creation.png" alt="creator" width={700} height={700} className=' left-0 -translate-y-2 absolute'/>
+                <img src="/assets/IMAGE - About Creation.png" alt="creator" width={800} height={800} className=' left-4 bottom-3 -translate-y-2 absolute'/>
 
 
-                <div className=' w-full h-fit grid grid-cols-1 md:grid-cols-2 absolute p-6 '>
+                <div className=' w-[90%] h-fit grid grid-cols-1 md:grid-cols-2 absolute p-6 '>
 
                     <div>
                     </div>

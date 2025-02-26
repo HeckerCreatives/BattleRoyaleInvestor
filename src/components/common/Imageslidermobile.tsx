@@ -8,13 +8,21 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import { useState } from "react";
 
+// const images = [
+//   "/assets/sample Gameplay Image.png",
+//   "/assets/sample Gameplay Image.png",
+//   "/assets/sample Gameplay Image.png",
+//   "/assets/sample Gameplay Image.png",
+//   "/assets/sample Gameplay Image.png",
+// ];
+
 const images = [
-  "/assets/sample Gameplay Image.png",
-  "/assets/sample Gameplay Image.png",
-  "/assets/sample Gameplay Image.png",
-  "/assets/sample Gameplay Image.png",
-  "/assets/sample Gameplay Image.png",
-];
+  '/GAMEPLAY.png',
+  '/GAMEPLAY 2.png',
+  '/GAMEPLAY 3.png',
+  '/GAMEPLAY 4.png',
+  '/GAMEPLAY 5.png',
+]
 
 export default function ImageSlidermobile() {
   const [activeIndex, setActiveIndex] = useState(0);

@@ -84,8 +84,8 @@ export default function Footer() {
                     <input onChange={(e) => setEmail(e.target.value)} value={email} type="email" placeholder='Email' className=' placeholder:text-white w-full p-2 bg-transparent border-[1px] border-white rounded-md text-white'/>
 
                     <div className=' w-full flex items-center justify-end'>
-                        <button disabled={loading} onClick={subscribe} className=' relative btnshadow flex items-center justify-center'>
-                            <img src="/assets/BUTTON.png" alt="button" width={300} height={300} className=' ~w-60/72'/>
+                        <button disabled={loading} onClick={subscribe} className=' relative flex items-center justify-center'>
+                            <img src="/assets/BUTTON.png" alt="button" width={300} height={300} className=' ~w-60/72 btnshadow'/>
                             <p className=' ~text-sm/lg font-semibold text-white absolute'>SUBMIT</p>{loading && <span>...</span>}
                         </button>
 
