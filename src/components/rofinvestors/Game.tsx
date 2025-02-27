@@ -86,7 +86,7 @@ export default function Game() {
 
             {/* <img src="/assets/Video.png" alt="video" className=' md:mt-8'/> */}
 
-            <motion.iframe 
+            {/* <motion.iframe 
              initial={{ opacity: 0, y: 50 }}
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: true, margin: "-100px 0px" }}
@@ -97,7 +97,20 @@ export default function Game() {
                  mass: 1,
                  delay: .2
              }}
-            className=' w-full aspect-video max-w-[1200px]'  src="https://www.youtube.com/embed/GhXPJRaQ4ng?si=W1efIUmizdSA5RMB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></motion.iframe>
+            className=' w-full aspect-video max-w-[1200px]'  src="https://youtube/izq3nh5TfIw?si=Lkh3IkVfR2gneBBC" title="Rise of Fearless" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></motion.iframe> */}
+
+            <motion.iframe  
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px 0px" }}
+            transition={{
+                type: "spring",
+                stiffness: 30,
+                damping: 10,
+                mass: 1,
+                delay: .2
+            }}
+            className=' w-full aspect-video max-w-[1200px]' src="https://www.youtube.com/embed/izq3nh5TfIw?si=Lkh3IkVfR2gneBBC" title="Rise of Fearless" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></motion.iframe>
 
 
             <motion.div 
