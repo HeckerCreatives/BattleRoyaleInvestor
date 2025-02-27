@@ -10,6 +10,7 @@ import {
   } from "@/components/ui/carousel"
 import { ArrowBigLeft, ArrowLeft, ArrowRight } from 'lucide-react'
 import { type CarouselApi } from "@/components/ui/carousel"
+import { motion } from 'framer-motion'
   
 
 export default function Opportunity() {
@@ -37,42 +38,152 @@ export default function Opportunity() {
     <div className=' w-full flex flex-col h-full items-center'>
 
         <div id='opportunity' className=' scroll-mt-12 w-full flex flex-col items-center justify-center'>
-            <img src="/assets/OPPORTUNITY.png" alt="text" width={300} height={300} className='  ~w-56/72'/>
+            <motion.img src="/assets/OPPORTUNITY.png" alt="text" width={300} height={300} 
+             initial={{ opacity: 0, y: 50 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             viewport={{ once: true, margin: "-100px 0px" }}
+             transition={{
+                 type: "spring",
+                 stiffness: 30,
+                 damping: 10,
+                 mass: 1,
+                 delay: 0
+             }}
+            className='  ~w-56/72'/>
 
             <div className=' w-full max-w-[1440px] grid grid-cols-1 md:grid-cols-2 gap-12 mt-12 px-4'>
 
                 <div className=' h-full flex flex-col gap-8 text-white items-center justify-center px-4'>
-                    <p className=' ~text-xs/sm'>Africa’s gaming market is set to exceed $2.5 billion by 2025, supported by over 600 million mobile users. Despite this potential, African stories remain largely untapped in gaming. Rise of Fearless is strategically positioned to fill this gap, offering a product that resonates locally and appeals globally. </p>
+                    <motion.p 
+                     initial={{ opacity: 0, y: 50 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true, margin: "-100px 0px" }}
+                     transition={{
+                         type: "spring",
+                         stiffness: 30,
+                         damping: 10,
+                         mass: 1,
+                         delay: .2
+                     }}
+                    className=' ~text-sm/xl'>Africa’s gaming market is set to exceed $2.5 billion by 2025, supported by over 600 million mobile users. Despite this potential, African stories remain largely untapped in gaming. Rise of Fearless is strategically positioned to fill this gap, offering a product that resonates locally and appeals globally. </motion.p>
 
-                    <p className=' ~text-xs/sm'>The future of Africa is incredibly promising, with countries like Ethiopia seeing rapid development. With advancements spreading across West Africa, we believe the continent is the next big thing, and this game represents a groundbreaking opportunity for investors and players alike. </p>
+                    <motion.p 
+                    
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px 0px" }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 30,
+                        damping: 10,
+                        mass: 1,
+                        delay: .4
+                    }}className=' ~text-sm/xl'>The future of Africa is incredibly promising, with countries like Ethiopia seeing rapid development. With advancements spreading across West Africa, we believe the continent is the next big thing, and this game represents a groundbreaking opportunity for investors and players alike. </motion.p>
 
-                    <h2 className=' ~text-lg/2xl font-semibold'>Our goal is to make this the largest game in Africa, targeting 5% of the continent’s 1.5 billion people.</h2>
+                    <motion.h2 
+                    
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px 0px" }}
+                    transition={{
+                        type: "spring",
+                        stiffness: 30,
+                        damping: 10,
+                        mass: 1,
+                        delay: .6
+                    }}className=' ~text-lg/3xl font-semibold'>Our goal is to make this the largest game in Africa, targeting 5% of the continent’s 1.5 billion people.</motion.h2>
 
                 </div>
 
-                <div>
+                <motion.div
+                 initial={{ opacity: 0, y: 50 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 viewport={{ once: true, margin: "-100px 0px" }}
+                 transition={{
+                     type: "spring",
+                     stiffness: 30,
+                     damping: 10,
+                     mass: 1,
+                     delay: .2
+                 }}
+                >
                     <img src="/assets/IMAGE - Opportunity.png" alt="image" />
-                </div>
+                </motion.div>
 
             </div>
         </div>
 
         <div id='revolution' className=' w-full flex flex-col items-center justify-center py-4' >
             
-            <img src="/assets/REVOLUTION.png" alt="text" width={300} height={300} className=' ~mt-20/40  ~w-56/72'/>
+            <motion.img src="/assets/REVOLUTION.png" alt="text" width={300} height={300} 
+             initial={{ opacity: 0, y: 50 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             viewport={{ once: true, margin: "-100px 0px" }}
+             transition={{
+                 type: "spring",
+                 stiffness: 30,
+                 damping: 10,
+                 mass: 1,
+                 delay: 0
+             }}
+            className=' ~mt-20/40  ~w-56/72'/>
             <div className=' w-full max-w-[1440px] grid grid-cols-1 md:grid-cols-2 gap-12 mt-12 px-4'>
 
-                <div>
+                <motion.div
+                 initial={{ opacity: 0, y: 50 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 viewport={{ once: true, margin: "-100px 0px" }}
+                 transition={{
+                     type: "spring",
+                     stiffness: 30,
+                     damping: 10,
+                     mass: 1,
+                     delay: .2
+                 }}
+                >
                     <img src="/assets/IMAGE -  Revolution.png" alt="image" />
-                </div>
+                </motion.div>
 
                 <div className=' h-full flex flex-col gap-8 text-white items-center justify-center text-end'>
-                    <p className=' ~text-xs/sm'>Millions in Africa do not have access to banks, making it difficult to save, invest, or participate in the global economy. Rise of Fearless changes this by using Play to Earn gaming and blockchain technology to give players direct access to digital earnings.</p>
+                    <motion.p 
+                     initial={{ opacity: 0, y: 50 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true, margin: "-100px 0px" }}
+                     transition={{
+                         type: "spring",
+                         stiffness: 30,
+                         damping: 10,
+                         mass: 1,
+                         delay: .2
+                     }}
+                    className=' ~text-sm/xl'>Millions in Africa do not have access to banks, making it difficult to save, invest, or participate in the global economy. Rise of Fearless changes this by using Play to Earn gaming and blockchain technology to give players direct access to digital earnings.</motion.p>
 
-                    <p className=' ~text-xs/sm'>Players can earn tokens by playing, which can be saved, traded, or converted into real-world value without needing a bank account. This opens new opportunities for financial growth, allowing gamers to build wealth, access financial services, and join the digital economy using only their mobile devices.</p>
+                    <motion.p 
+                     initial={{ opacity: 0, y: 50 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true, margin: "-100px 0px" }}
+                     transition={{
+                         type: "spring",
+                         stiffness: 30,
+                         damping: 10,
+                         mass: 1,
+                         delay: .4
+                     }}
+                    className=' ~text-sm/xl'>Players can earn tokens by playing, which can be saved, traded, or converted into real-world value without needing a bank account. This opens new opportunities for financial growth, allowing gamers to build wealth, access financial services, and join the digital economy using only their mobile devices.</motion.p>
 
-                    <h2 className=' ~text-lg/2xl font-semibold'>Rise of Fearless is not just entertainment. 
-                    It is a way for millions to gain financial freedom.</h2>
+                    <motion.h2 
+                     initial={{ opacity: 0, y: 50 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true, margin: "-100px 0px" }}
+                     transition={{
+                         type: "spring",
+                         stiffness: 30,
+                         damping: 10,
+                         mass: 1,
+                         delay: .6
+                     }}
+                    className=' ~text-lg/3xl font-semibold'>Rise of Fearless is not just entertainment. 
+                    It is a way for millions to gain financial freedom.</motion.h2>
 
                 </div>
             </div>
@@ -83,19 +194,41 @@ export default function Opportunity() {
         <div id='roadmap' className=' relative w-full h-auto flex items-center justify-center ~py-44/60 px-4'>
             <img src="/assets/Plate for RAODMAP.png" alt="bg" className=' absolute w-full h-full' />
             <div className=' flex flex-col items-center gap-8 w-full h-full relative z-20 max-w-[1440px]'>
-                <img src="/assets/roadmap.png" alt="text" width={280} height={280} className='~w-48/64'/>
+                <motion.img src="/assets/roadmap.png" alt="text" width={280} height={280} 
+                 initial={{ opacity: 0, y: 50 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 viewport={{ once: true, margin: "-100px 0px" }}
+                 transition={{
+                     type: "spring",
+                     stiffness: 30,
+                     damping: 10,
+                     mass: 1,
+                     delay: 0
+                 }}
+                className='~w-48/64'/>
 
                 <div className=' w-full flex flex-col ~gap-6/12 relative z-20'>
 
-                    <div className=' w-full md:flex flex-col gap-8 hidden'>
+                    <motion.div 
+                     initial={{ opacity: 0, y: 50 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true, margin: "-100px 0px" }}
+                     transition={{
+                         type: "spring",
+                         stiffness: 30,
+                         damping: 10,
+                         mass: 1,
+                         delay: .2
+                     }}
+                    className=' w-full md:flex flex-col gap-8 hidden'>
                     {roadmap.map((item, index) => (
                         <div key={index} className=' group hover:scale-105 transition-all duration-300 w-full h-fit border-2 border-amber-300 rounded-md'>
                             <div className=' w-full h-fit p-2 rounded-md bg-amber-800'>
                                 <div className=' relative w-full h-[300px] flex  bg-zinc-950 rounded-md p-6 overflow-hidden'>
 
                                     <div className=' flex flex-col w-[60%]'>
-                                        <h2 className=' bg-gradient-to-r from-amber-800 to-amber-800/0 p-2 text-white text-xl font-bold'>{item.title}</h2>
-                                        <p className=' text-zinc-300 ~text-xs/lg mt-6'>{item.description}</p>
+                                        <h2 className=' bg-gradient-to-r from-amber-800 to-amber-800/0 p-2 text-white text-2xl font-bold'>{item.title}</h2>
+                                        <p className=' text-zinc-300 ~text-sm/xl mt-6'>{item.description}</p>
 
                                     </div>
 
@@ -105,7 +238,7 @@ export default function Opportunity() {
                             </div>
                         </div>
                     ))}
-                    </div>
+                    </motion.div>
                     
                    
 
@@ -136,7 +269,18 @@ export default function Opportunity() {
                     <CarouselNext />
                     </Carousel>
 
-                    <div className="w-full h-full md:hidden flex items-center justify-center gap-2">
+                    <motion.div 
+                     initial={{ opacity: 0, y: 50 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true, margin: "-100px 0px" }}
+                     transition={{
+                         type: "spring",
+                         stiffness: 30,
+                         damping: 10,
+                         mass: 1,
+                         delay: .2
+                     }}
+                    className="w-full h-full md:hidden flex items-center justify-center gap-2">
                         <button
                             onClick={() => api && api.scrollTo((current -1 ) - 1)}
                             disabled={current === 1}
@@ -151,17 +295,28 @@ export default function Opportunity() {
                         >
                             <ArrowRight size={20} />
                         </button>
-                    </div>
+                    </motion.div>
 
 
 
-                    <div className=' w-full flex items-center justify-center mdmt-12'>
+                    <motion.div 
+                     initial={{ opacity: 0, y: 50 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true, margin: "-100px 0px" }}
+                     transition={{
+                         type: "spring",
+                         stiffness: 30,
+                         damping: 10,
+                         mass: 1,
+                         delay: 0
+                     }}
+                    className=' w-full flex items-center justify-center mdmt-12'>
                         <button className=' relative drop-shadow-lg flex items-center justify-center'>
                             <img src="/assets/BUTTON.png" alt="button" width={500} height={500} className=' ~w-72/96'/>
                             <p className=' ~text-sm/xl font-bold text-white absolute'>DOWNLOAD THE PITCH DECK</p>
                         </button>
 
-                    </div>
+                    </motion.div>
                     
 
                 </div>

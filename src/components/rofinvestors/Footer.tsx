@@ -69,13 +69,13 @@ export default function Footer() {
 
         <div className=' w-full max-w-[1440px] flex flex-col gap-8 items-center'>
 
-        <h2 className=' ~text-lg/2xl font-semibold text-white w-full text-start'>INVEST EARLY NOW</h2>
+        <h2 className=' ~text-xl/3xl font-semibold text-white w-full text-start'>INVEST EARLY NOW</h2>
 
 
             <div className=' w-full grid grid-cols-1 md:grid-cols-2 gap-8'>
                 <div className=' flex flex-col gap-8 text-white'>
 
-                    <p className=' ~text-xs/lg text-zinc-100'>Collaborate with leading gaming and media platforms to maximize visibility and growth. We aim to partner with major gaming networks and media outlets to expand the game’s reach and visibility, both within Africa and internationally. These partnerships will fuel our growth, ensuring Rise of Fearless reaches the right audience and establishes itself as a global force in gaming, while also paving the way for foreign investors to easily tap into the African market.</p>
+                    <p className=' ~text-sm/xl text-zinc-100'>Collaborate with leading gaming and media platforms to maximize visibility and growth. We aim to partner with major gaming networks and media outlets to expand the game’s reach and visibility, both within Africa and internationally. These partnerships will fuel our growth, ensuring Rise of Fearless reaches the right audience and establishes itself as a global force in gaming, while also paving the way for foreign investors to easily tap into the African market.</p>
 
                 </div>
 

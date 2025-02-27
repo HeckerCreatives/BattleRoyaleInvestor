@@ -11,6 +11,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { Menu } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 
 export default function HeroSection() {
@@ -91,7 +92,19 @@ export default function HeroSection() {
       </nav>
 
       <div className=' relative z-10 w-full h-full flex justify-center items-center text-white'>
-        <h1 className=' ~text-4xl/6xl font-bold font-gilgond text-center -translate-y-24'>Welcome Investors</h1>
+        <motion.h1 
+        
+         initial={{ opacity: 0, y: -50 }}
+         whileInView={{ opacity: 1, y: -100 }}
+         viewport={{ once: true, margin: "-100px 0px" }}
+         transition={{
+             type: "spring",
+             stiffness: 30,
+             damping: 10,
+             mass: 1,
+             delay: 0
+         }}
+        className=' ~text-4xl/6xl font-bold font-gilgond text-center -translate-y-24'>Welcome Investors</motion.h1>
 
       </div>
     </div>
