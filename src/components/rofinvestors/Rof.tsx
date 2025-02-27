@@ -94,7 +94,7 @@ export default function Rof() {
                          mass: 1,
                          delay: .2
                      }}
-                    className=' ~text-sm/xl mt-8 max-w-[900px]'>With carefully crafted maps based on iconic African landscapes, such as the Great TITE Rift Valley and Lalibela’s rock-hewn churches, and characters rooted in historical traditions, Rise of Fearless delivers an immersive experience that resonates on a global scale.</motion.p>
+                    className=' ~text-sm/xl mt-8 max-w-[900px]'>With carefully crafted maps based on iconic African landscapes, such as the Great Rift Valley and Lalibela’s rock-hewn churches, and characters rooted in historical traditions, Rise of Fearless delivers an immersive experience that resonates on a global scale.</motion.p>
 
                     <motion.div 
                      initial={{ opacity: 0, y: 50 }}

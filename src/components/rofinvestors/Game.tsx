@@ -214,7 +214,7 @@ export default function Game() {
                             {maps.map((item, index) => (
                             <CarouselItem key={index} className=' flex items-center justify-center'>
                                 <motion.div
-                                className="w-full aspect-video relative "
+                                className="w-full aspect-video relative flex items-center justify-center"
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -222,7 +222,7 @@ export default function Game() {
                                 <img
                                     src={item || "/placeholder.svg"}
                                     alt={`Map ${index}`}
-                                    className=" w-full h-full object-cover ml-4"
+                                    className=" h-full object-cover ml-4"
                                 />
                                 </motion.div>
                             </CarouselItem>
