@@ -123,7 +123,7 @@ export default function Rof() {
                          delay: .6
                      }}
                     className=' w-full flex items-center justify-center ~mt-12/32'>
-                        <a href='/#invest' className=' relative drop-shadow-lg flex items-center justify-center'>
+                        <a href='/#invest' className=' relative drop-shadow-lg flex items-center justify-center hover:scale-105 duration-300 transition-all'>
                             <img src="/assets/BUTTON.png" alt="button" width={500} height={500} className=' ~w-64/96'/>
                             <p className=' !text-sm/2xl font-bold text-white absolute'>CONNECT WITH US</p>
                         </a>

@@ -309,7 +309,7 @@ export default function Game() {
                 mass: 1,
                 delay: .2
             }}className=' w-full flex items-center justify-center ~mt-2/12'>
-                        <a href='https://rof.game/' target='_blank' className=' relative drop-shadow-lg flex items-center justify-center'>
+                        <a href='https://rof.game/' target='_blank' className=' relative drop-shadow-lg flex items-center justify-center hover:scale-105 duration-300 transition-all'>
                             <img src="/assets/BUTTON.png" alt="button" width={500} height={500} className=' ~w-72/96'/>
                             <p className=' ~text-sm/xl font-bold text-white absolute'>TRY RISE OF FEARLESS NOW</p>
                         </a>

@@ -311,7 +311,7 @@ export default function Opportunity() {
                          delay: 0
                      }}
                     className=' w-full flex items-center justify-center mdmt-12'>
-                        <button className=' relative drop-shadow-lg flex items-center justify-center'>
+                        <button className=' relative drop-shadow-lg flex items-center justify-center hover:scale-105 duration-300 transition-all'>
                             <img src="/assets/BUTTON.png" alt="button" width={500} height={500} className=' ~w-72/96'/>
                             <p className=' ~text-sm/xl font-bold text-white absolute'>DOWNLOAD THE PITCH DECK</p>
                         </button>

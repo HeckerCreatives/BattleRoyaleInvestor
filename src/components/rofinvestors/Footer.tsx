@@ -86,7 +86,7 @@ export default function Footer() {
                     <div className='w-full flex items-center justify-end'>
                       <button 
                         onClick={subscribe} 
-                        className='relative flex items-center justify-center cursor-pointer'
+                        className='relative flex items-center justify-center cursor-pointer hover:scale-105 duration-300 transition-all'
                       >
                         <img 
                           src="/assets/BUTTON.png" 
@@ -103,7 +103,10 @@ export default function Footer() {
 
             </div>
 
+            <a href="/" className=' hover:scale-105 duration-300 transition-all'>
             <img src="/logo.png" alt="logo" width={300} height={300} className=' ~mt-20/32 ~w-52/80'/>
+            </a>
+
 
         </div>
     
