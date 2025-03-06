@@ -8,6 +8,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import { motion, AnimatePresence } from "framer-motion"
+import VideoPlayer from '../common/VideoPlayer'
 
 const maps = [
     '/Game Map v.3.png'
@@ -99,7 +100,7 @@ export default function Game() {
              }}
             className=' w-full aspect-video max-w-[1200px]'  src="https://youtube/izq3nh5TfIw?si=Lkh3IkVfR2gneBBC" title="Rise of Fearless" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></motion.iframe> */}
 
-            <motion.iframe  
+            {/* <motion.iframe  
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px 0px" }}
@@ -110,8 +111,23 @@ export default function Game() {
                 mass: 1,
                 delay: .2
             }}
-            className=' w-full aspect-video max-w-[1200px]' src="https://www.youtube.com/embed/izq3nh5TfIw?si=Lkh3IkVfR2gneBBC" title="Rise of Fearless" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></motion.iframe>
+            className=' w-full aspect-video max-w-[1200px]' src="https://www.youtube.com/embed/izq3nh5TfIw?si=Lkh3IkVfR2gneBBC" title="Rise of Fearless" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></motion.iframe> */}
 
+
+            <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px 0px" }}
+            transition={{
+                type: "spring",
+                stiffness: 30,
+                damping: 10,
+                mass: 1,
+                delay: .2
+            }}
+            className=' w-full flex items-center justify-center'>
+            <VideoPlayer/>
+            </motion.div>
 
             <motion.div 
              initial={{ opacity: 0, y: 50 }}

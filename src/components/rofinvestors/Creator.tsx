@@ -32,14 +32,16 @@ export default function Creator() {
                          mass: 1,
                          delay: .2
                      }}
-            className=' relative w-fit hidden lg:flex items-center justify-end mt-20'>
+            className=' relative w-fit hidden lg:flex items-center justify-center mt-20'>
                 <img src="/assets/Description TAB.png" alt="tab" className=' h-[600px]' />
-                <img src="/assets/IMAGE - About Creation.png" alt="creator" width={800} height={800} className=' h-full left-4 bottom-3 -translate-y-2 absolute'/>
 
 
-                <div className=' w-[90%] h-fit grid grid-cols-1 md:grid-cols-2 absolute p-6 '>
+                <div className=' w-[95%] grid grid-cols-1 md:grid-cols-2 absolute h-[90%] gap-6 '>
 
-                    <div>
+                    <div className=' w-full h-full overflow-hidden'
+                style={{ backgroundImage: "url('/girl.jpg')" , backgroundSize:'cover', backgroundRepeat:'no-repeat', backgroundPosition:'top'}}>
+                {/* <img src="/girl.jpg" alt="creator" width={800} height={800} className=' h-full'/> */}
+
                     </div>
 
                     <div className=' flerx flex-col'>
@@ -62,9 +64,9 @@ export default function Creator() {
                      }}
             className=' relative w-fit lg:hidden flex items-center justify-center ~mt-8/20'>
 
-                <div className=' w-full h-fit grid grid-cols-1 md:grid-cols-2 p-6 bg-orange-200 rounded-md'>
+                <div className=' w-full h-fit grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 bg-orange-200 rounded-md'>
                     <div>
-                        <img src="/assets/IMAGE - About Creation.png" alt="creator" width={700} height={700} className=' md:h-[400px] -translate-y-4'/>
+                        <img src="/girl.jpg" alt="creator" width={700} height={700} className=' object-cover'/>
                     </div>
 
                     <div className=' flerx flex-col'>
