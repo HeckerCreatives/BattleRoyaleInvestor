@@ -41,7 +41,7 @@ export default function Creator() {
 
                 >
 
-                <img src="/image.png" alt="tab" className=' h-[480px] absolute translate-x-[70px] top-10' />
+                <img src="/Image.png" alt="tab" className=' h-[480px] absolute translate-x-[70px] top-10' />
                 <img src="/Person Image.png" alt="creator" width={320} height={320} className=' absolute -translate-x-8 -translate-y-6 scale-x-[-1]'/>
 
 
@@ -75,7 +75,7 @@ export default function Creator() {
 
                 <div className=' w-full h-fit grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 bg-orange-200 rounded-md'>
                 <div className=' w-full h-full overflow-hidden flex items-start justify-start'
-                style={{ backgroundImage: "url('/image.png')" , backgroundSize:'cover', backgroundRepeat:'no-repeat', backgroundPosition:'top'}}>
+                style={{ backgroundImage: "url('/Image.png')" , backgroundSize:'cover', backgroundRepeat:'no-repeat', backgroundPosition:'top'}}>
                 <img src="/Person Image.png" alt="creator" width={400} height={400} className=' scale-x-[-1]'/>
 
                     </div>
