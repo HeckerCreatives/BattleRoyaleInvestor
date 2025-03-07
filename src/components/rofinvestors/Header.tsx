@@ -1,7 +1,7 @@
 'use client'
 import { nav } from '@/app/data';
 import React, { useEffect, useState } from 'react'
-import { FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaTelegram, FaXTwitter } from "react-icons/fa6";
 import {
   Sheet,
   SheetContent,
@@ -34,7 +34,7 @@ export default function HeroSection() {
   useEffect(() => {
     const fetchlinks = async () => {
         try {
-            const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/sociallinks/getsociallinksa?filter=investor`);
+            const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/sociallinks/getsociallinksa?filter=user`);
 
             setList(response.data.data)
         
@@ -47,11 +47,13 @@ export default function HeroSection() {
   }, []);
 
   const getImage = (type: string) => {
-   if(type === 'instagram'){
-      return  <Instagram size={25} className=' hover:scale-110 ease-in-out duration-300'/>
+    if(type === 'instagram'){
+      return  <FaInstagram size={25} className=' rounded-full text-amber-950 hover:scale-110 ease-in-out duration-300'/>
     }  else if(type === 'x'){
-      return  <BsTwitterX size={25} className=' hover:scale-110 ease-in-out duration-300'/>
-    } 
+      return  <BsTwitterX size={25} className=' rounded-full text-amber-950 hover:scale-110 ease-in-out duration-300'/>
+    } else {
+      return <FaTelegram size={25} className=' rounded-full text-amber-950 hover:scale-110 ease-in-out duration-300'/>
+    }
 
   }
 
@@ -79,7 +81,7 @@ export default function HeroSection() {
         
           <div className=' relative w-fit h-full flex items-center justify-center'>
             <img src="/assets/Top Button.png" alt="button" width={150} height={150} />
-            <div className=' w-full h-full text-black absolute flex items-center justify-center gap-8'>
+            <div className=' w-full h-full text-black absolute flex items-center justify-center gap-4'>
               {list.map((item, index) => (
                 <a href={item.link} key={item._id} target='_blank' className=' hover:scale-110 transition-all duration-300'>
                  {getImage(item.title)}
@@ -117,7 +119,7 @@ export default function HeroSection() {
           
             <div className=' relative w-fit h-full flex items-center justify-center'>
               <img src="/assets/Top Button.png" alt="" width={150} />
-              <div className=' w-full h-full text-black absolute flex items-center justify-center gap-8'>
+              <div className=' w-full h-full text-black absolute flex items-center justify-center gap-4'>
               {list.map((item, index) => (
                 <a href={item.link} key={item._id} target='_blank' className=' hover:scale-110 transition-all duration-300'>
                  {getImage(item.title)}
